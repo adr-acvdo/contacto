@@ -1,0 +1,109 @@
+*{margin:0;padding: 0;
+  
+  font-family: 'Phudu', cursive;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{background: #160032;color:white;height:800px; }
+
+.contenedor {
+    
+    
+    text-align: center;
+    border-radius: 20PX;
+    border:solid 1px black;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: "header header header header "
+    "formulario formulario formulario formulario" 
+    "formulario formulario formulario formulario" 
+    "footer footer footer footer "
+    "footer footer footer footer ";
+    grid-column-gap:20px  ;
+    grid-row-gap:20px;
+  }
+
+  /*grid areas*/
+  .header{grid-area: header;background: #040503;
+    height:150px;margin-bottom: 20px;}
+  .formulario{grid-area: formulario;height: 800px;width: 800px;margin: auto;border: solid black 5px;}
+  .footer{grid-area: footer;height: 400px;background: #160032;}
+  
+.header{box-shadow: 0px 5px 5px rgba(244, 209, 84, 0.93);}
+.header,ul,li{display: flex;flex-direction: row;
+  justify-content:flex-end;font-size: 30px;padding: 20px; }
+
+.logo{align-self:center ;margin-right:910px ;}
+a{color: aliceblue;text-decoration: none;}
+a:hover{color: #040503;}
+  img{height: 150px;}
+  label {
+    display: block;
+    margin-bottom: 10px;
+    text-align:center;
+    font-size: 40px;
+    height: 40px;
+    padding: 10px;
+   
+  }
+
+
+
+
+
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button[type="submit"] {
+    background-color: #78004E;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 60PX;
+    width: 100PX;
+    font-size: 20PX;
+  }
+  button[type="submit"]:hover {
+    background-color: #040503;
+  }
+  
+  .ul {display:flex ;flex-direction: column;align-items: flex-start;}
+
+  .about_us,p{display:flex ;flex-direction: column;margin:20px;font-size: 20px;
+    text-align:center;white-space:pre-line;}
+
+  .footer{display: flex;flex-direction: row;justify-content: space-around;}
+
+ /* Estilos base */
+
+
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  #formulario,body , img {
+    max-width: 400px;
+  }
+}
+
+/* Estilos para pantallas aún más pequeñas */
+@media screen and (max-width: 480px) {
+  #formulario,body,img{
+    max-width: 300px;
+  }
+}
+   
